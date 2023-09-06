@@ -1,6 +1,6 @@
 # gloria-jeans
-<img src="images/MicrosoftTeams-image.png" width="500"/>
-<img src="images/image2023-2-14_9-46-6.png" width="500"/>
+<img src="images/MicrosoftTeams-image.png" width="500"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/image2023-2-14_9-46-6.png" width="500"/>
+
 <img src="images/Screenshot 2023-01-30 at 14-23-04 GJ.pdf.png" width="260"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/Screenshot 2023-01-30 at 09-23-47 GJ.pdf.png" width="260"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/Screenshot 2023-01-30 at 09-25-42 GJ.pdf.png" width="260"/>
 <img src="images/Screenshot 2023-01-30 at 09-26-50 GJ.pdf.png" width="260"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/Screenshot 2023-01-30 at 09-29-50 GJ.pdf.png" width="260"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/Screenshot 2023-01-30 at 10-40-12 GJ.pdf.png" width="260"/>
 <img src="images/Screenshot 2023-01-30 at 10-41-17 GJ.pdf.png" width="260"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/Screenshot 2023-01-30 at 14-03-16 GJ-1.pdf.png" width="260"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/Screenshot 2023-01-30 at 11-01-47 GJ.pdf.png" width="260"/>
