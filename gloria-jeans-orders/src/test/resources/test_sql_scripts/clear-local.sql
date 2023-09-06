@@ -1,0 +1,6 @@
+DELETE warehouse_products_order;
+DELETE warehouse_documents_orders;
+DELETE warehouse_scanned_marks;
+DELETE warehouse_scanned_order_documents;
+DELETE warehouse_returned_orders;
+DELETE warehouse_package;

@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.3.final using JasperReports Library version 6.20.3-415f9428cffdb6805c6f85bbb29ebaf18813a2ab  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" uuid="152eaef3-f300-47f4-8bf3-ab4b79bd17e8">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="LocalBase"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<style name="Default" isDefault="true" pdfFontName="fonts/arial.ttf" pdfEncoding="Cp1251"/>
+	<style name="Bold" pdfFontName="fonts/arial_bold.ttf" pdfEncoding="Cp1251"/>
+	<subDataset name="LocalBase" uuid="bc682d99-5ce9-4df5-b28e-d03c3707175b">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="LocalBase"/>
+		<parameter name="documentIdd" class="java.lang.String"/>
+		<queryString>
+			<![CDATA[SELECT * FROM dbo.warehouse_products_order WHERE quantity_fact > 0 AND document_idd = $P{documentIdd}]]>
+		</queryString>
+		<field name="barcode" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="barcode"/>
+			<property name="com.jaspersoft.studio.field.label" value="barcode"/>
+		</field>
+		<field name="full_name" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="full_name"/>
+			<property name="com.jaspersoft.studio.field.label" value="full_name"/>
+		</field>
+		<field name="quantity_fact" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="quantity_fact"/>
+			<property name="com.jaspersoft.studio.field.label" value="quantity_fact"/>
+		</field>
+		<field name="price" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="price"/>
+			<property name="com.jaspersoft.studio.field.label" value="price"/>
+		</field>
+		<field name="sum" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="sum"/>
+			<property name="com.jaspersoft.studio.field.label" value="sum"/>
+		</field>
+		<variable name="FINAL_SUM" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{sum}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+	</subDataset>
+	<parameter name="buyerFullName" class="java.lang.String"/>
+	<parameter name="deliveryAddress" class="java.lang.String"/>
+	<parameter name="orderNumber" class="java.lang.String"/>
+	<parameter name="buyerPhoneNumber" class="java.lang.String"/>
+	<parameter name="orderDate" class="java.lang.String"/>
+	<parameter name="buyerEmail" class="java.lang.String"/>
+	<parameter name="documentIdd" class="java.lang.String"/>
+	<field name="id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+	</field>
+	<field name="idd" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="idd"/>
+		<property name="com.jaspersoft.studio.field.label" value="idd"/>
+	</field>
+	<field name="id_doc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="id_doc"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_doc"/>
+	</field>
+	<field name="line_number_identity" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="line_number_identity"/>
+		<property name="com.jaspersoft.studio.field.label" value="line_number_identity"/>
+	</field>
+	<field name="document_idd" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="document_idd"/>
+		<property name="com.jaspersoft.studio.field.label" value="document_idd"/>
+	</field>
+	<field name="barcode" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="barcode"/>
+		<property name="com.jaspersoft.studio.field.label" value="barcode"/>
+	</field>
+	<field name="vendor_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="vendor_code"/>
+		<property name="com.jaspersoft.studio.field.label" value="vendor_code"/>
+	</field>
+	<field name="base_unit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="base_unit"/>
+		<property name="com.jaspersoft.studio.field.label" value="base_unit"/>
+	</field>
+	<field name="is_weight" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.name" value="is_weight"/>
+		<property name="com.jaspersoft.studio.field.label" value="is_weight"/>
+	</field>
+	<field name="kind_of" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="kind_of"/>
+		<property name="com.jaspersoft.studio.field.label" value="kind_of"/>
+	</field>
+	<field name="kind_of_product" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="kind_of_product"/>
+		<property name="com.jaspersoft.studio.field.label" value="kind_of_product"/>
+	</field>
+	<field name="model_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="model_code"/>
+		<property name="com.jaspersoft.studio.field.label" value="model_code"/>
+	</field>
+	<field name="pmm_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="pmm_code"/>
+		<property name="com.jaspersoft.studio.field.label" value="pmm_code"/>
+	</field>
+	<field name="min_balance" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="min_balance"/>
+		<property name="com.jaspersoft.studio.field.label" value="min_balance"/>
+	</field>
+	<field name="exclude_from_price" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.name" value="exclude_from_price"/>
+		<property name="com.jaspersoft.studio.field.label" value="exclude_from_price"/>
+	</field>
+	<field name="gtd_number" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="gtd_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="gtd_number"/>
+	</field>
+	<field name="main_unit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="main_unit"/>
+		<property name="com.jaspersoft.studio.field.label" value="main_unit"/>
+	</field>
+	<field name="main_property" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="main_property"/>
+		<property name="com.jaspersoft.studio.field.label" value="main_property"/>
+	</field>
+	<field name="nds_rate" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nds_rate"/>
+		<property name="com.jaspersoft.studio.field.label" value="nds_rate"/>
+	</field>
+	<field name="np_rate" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="np_rate"/>
+		<property name="com.jaspersoft.studio.field.label" value="np_rate"/>
+	</field>
+	<field name="country_of_origin" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="country_of_origin"/>
+		<property name="com.jaspersoft.studio.field.label" value="country_of_origin"/>
+	</field>
+	<field name="product_group" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="product_group"/>
+		<property name="com.jaspersoft.studio.field.label" value="product_group"/>
+	</field>
+	<field name="full_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="full_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="full_name"/>
+	</field>
+	<field name="mark_type_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="mark_type_code"/>
+		<property name="com.jaspersoft.studio.field.label" value="mark_type_code"/>
+	</field>
+	<field name="quantity" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="quantity"/>
+		<property name="com.jaspersoft.studio.field.label" value="quantity"/>
+	</field>
+	<field name="quantity_fact" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="quantity_fact"/>
+		<property name="com.jaspersoft.studio.field.label" value="quantity_fact"/>
+	</field>
+	<field name="price" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="price"/>
+		<property name="com.jaspersoft.studio.field.label" value="price"/>
+	</field>
+	<field name="sum" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="sum"/>
+		<property name="com.jaspersoft.studio.field.label" value="sum"/>
+	</field>
+	<field name="vat" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="vat"/>
+		<property name="com.jaspersoft.studio.field.label" value="vat"/>
+	</field>
+	<field name="marks" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="marks"/>
+		<property name="com.jaspersoft.studio.field.label" value="marks"/>
+	</field>
+	<field name="is_mark" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.name" value="is_mark"/>
+		<property name="com.jaspersoft.studio.field.label" value="is_mark"/>
+	</field>
+	<field name="without_marks" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="without_marks"/>
+		<property name="com.jaspersoft.studio.field.label" value="without_marks"/>
+	</field>
+	<field name="coefficient" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="coefficient"/>
+		<property name="com.jaspersoft.studio.field.label" value="coefficient"/>
+	</field>
+	<field name="unit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="unit"/>
+		<property name="com.jaspersoft.studio.field.label" value="unit"/>
+	</field>
+	<field name="reason_return" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="reason_return"/>
+		<property name="com.jaspersoft.studio.field.label" value="reason_return"/>
+	</field>
+	<field name="products_comment" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="products_comment"/>
+		<property name="com.jaspersoft.studio.field.label" value="products_comment"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="warehouse_products_order"/>
+	</field>
+	<field name="idd_analog" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="idd_analog"/>
+		<property name="com.jaspersoft.studio.field.label" value="idd_analog"/>
+	</field>
+	<field name="original_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="original_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="original_id"/>
+	</field>
+	<field name="original_idoc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="original_idoc"/>
+		<property name="com.jaspersoft.studio.field.label" value="original_idoc"/>
+	</field>
+	<variable name="FieldsSum" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$V{FieldsSum}]]></variableExpression>
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="635" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="Float" x="206" y="47" width="160" height="20" uuid="37110f44-7ef2-40ae-b5db-66a8dbccb325"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Спасибо за покупку!]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="40" y="71" width="480" height="20" uuid="64d7afa9-881d-4236-8b7d-b3b7e413f70e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[НАЧИСЛЯЕМ 50% ОТ СТОИМОСТИ ПОКУПОК ПО ПОЛНОЙ ЦЕНЕ НА КАРТУ GJ!]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="211" width="90" height="16" uuid="0a6448a9-54a5-4098-a0c7-8ef3b3b5f9d5">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Состав заказа:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="159" width="52" height="16" uuid="3da0a0ba-1b9e-47df-857a-bc1f70052905">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Заказ №: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="112" width="70" height="18" uuid="c151c6b3-c746-48e9-b1ec-e21d21a8b34b">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Покупатель: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="276" y="159" width="58" height="16" uuid="47b5612a-a61f-438b-868a-a7746dee579d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Телефон:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="276" y="112" width="94" height="16" uuid="f0d49533-daa0-4ff9-9944-5c36b7fdbaae"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Адрес доставки: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="188" width="70" height="16" uuid="514b112b-8a04-4e9f-9991-40c57bc749b1">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Дата заказа:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="276" y="188" width="63" height="16" uuid="eea360d3-47e4-4ddc-aece-8769cfc5a784"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Эл. почта:]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement style="Default" mode="Transparent" x="10" y="240" width="551" height="68" forecolor="#050505" backcolor="#FFFFFF" uuid="656687d9-643d-4ad1-ad62-68e606d774c3">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+					<property name="com.jaspersoft.studio.components.autoresize.next" value="true"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="LocalBase" uuid="d3870dda-136c-4b7f-9814-bd95aa3bc691">
+						<datasetParameter name="documentIdd">
+							<datasetParameterExpression><![CDATA[$P{documentIdd}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="19" uuid="818ffe73-a722-4db9-914a-a70b2d350ffd">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:tableFooter height="18" rowSpan="1">
+							<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+								<pen lineWidth="0.5"/>
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</jr:tableFooter>
+						<jr:columnHeader height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="19" height="20" forecolor="#050505" uuid="6b7ac7f8-a088-4882-9d3a-b101cf3cf4a3">
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+									<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<paragraph leftIndent="5" rightIndent="5"/>
+								</textElement>
+								<text><![CDATA[№]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="30">
+							<textField>
+								<reportElement mode="Transparent" x="0" y="0" width="19" height="30" forecolor="#050505" uuid="cb17573a-cec1-4185-997a-c6ff8ff5a708">
+									<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+								</box>
+								<textElement>
+									<paragraph leftIndent="5" spacingBefore="0"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="91" uuid="1f16f9ef-d517-4c79-8592-57ffda1e6235">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:tableFooter height="18" rowSpan="1">
+							<box padding="1"/>
+						</jr:tableFooter>
+						<jr:columnHeader height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="91" height="20" forecolor="#050505" uuid="d7660816-00d3-495e-bb98-f1e780f082a5">
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+									<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+									<paragraph leftIndent="3" rightIndent="0"/>
+								</textElement>
+								<text><![CDATA[КОД ТОВАРА]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="30">
+							<textField>
+								<reportElement mode="Transparent" x="0" y="0" width="91" height="30" forecolor="#050505" uuid="cf276953-dac9-4cd4-9024-eeb951c6414d">
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+									<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+								</box>
+								<textElement>
+									<paragraph leftIndent="5" rightIndent="5"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{barcode}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="210" uuid="070380c0-30cf-4239-a307-608ca2df5985">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:tableFooter height="18" rowSpan="1"/>
+						<jr:columnHeader height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="210" height="20" forecolor="#050505" uuid="f401c033-997d-4739-8b9d-67ba81d57ed6">
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+									<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+									<paragraph leftIndent="3" rightIndent="0"/>
+								</textElement>
+								<text><![CDATA[НАИМЕНОВАНИЕ, ЦВЕТ, РАЗМЕР]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="30">
+							<textField>
+								<reportElement mode="Transparent" x="0" y="0" width="210" height="30" forecolor="#050505" uuid="d74a7370-e9fa-4160-acfd-4894efe6f237">
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+									<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+								</box>
+								<textElement>
+									<paragraph leftIndent="5" rightIndent="5"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{full_name}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="0d28f86f-b1b3-40f6-b1bc-bf186c1b070c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:tableFooter height="18" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="18" uuid="04b704ca-b725-47b1-8996-7f08670b7933"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+						</jr:tableFooter>
+						<jr:columnHeader height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="50" height="20" forecolor="#050505" uuid="a0203817-ede9-4975-8078-49e52f9dd66b">
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+									<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+									<paragraph leftIndent="3" rightIndent="0"/>
+								</textElement>
+								<text><![CDATA[КОЛ-ВО]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="30">
+							<textField>
+								<reportElement mode="Transparent" x="0" y="0" width="50" height="30" forecolor="#050505" uuid="3516dbf4-ce7f-4795-a606-b8397b61fca2">
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+									<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+								</box>
+								<textElement>
+									<paragraph leftIndent="5" rightIndent="5"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{quantity_fact}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="fc476a84-8f2c-4c30-bcf5-908d6da385e2">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+						<jr:tableFooter height="18" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="90" height="18" forecolor="#050505" uuid="85ed61f2-14ea-4c49-b831-ced535978fa1">
+									<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font size="11" isBold="true"/>
+									<paragraph leftIndent="3" rightIndent="0"/>
+								</textElement>
+								<text><![CDATA[Итого к оплате:]]></text>
+							</staticText>
+						</jr:tableFooter>
+						<jr:columnHeader height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="90" height="20" forecolor="#050505" uuid="e9671757-fd9e-403a-9684-7ef8ce36477b">
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+									<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+									<paragraph leftIndent="3" rightIndent="0"/>
+								</textElement>
+								<text><![CDATA[ЦЕНА]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="30">
+							<textField>
+								<reportElement mode="Transparent" x="0" y="0" width="90" height="30" forecolor="#050505" uuid="a4d840a3-8fa8-424c-9c33-e9190758b656">
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+									<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+								</box>
+								<textElement>
+									<paragraph leftIndent="5" rightIndent="5"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="91" uuid="5496aab1-f026-4c14-b008-9ceab27ea3c6">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+						<jr:tableFooter height="18" rowSpan="1">
+							<textField pattern="###0.00;-###0.00">
+								<reportElement x="0" y="0" width="91" height="18" uuid="3e832e93-cbe2-403c-b5ac-f849a9274fcc">
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font isBold="true"/>
+									<paragraph leftIndent="5"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{FINAL_SUM}]]></textFieldExpression>
+							</textField>
+						</jr:tableFooter>
+						<jr:columnHeader height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="91" height="20" forecolor="#050505" uuid="f3d6ae90-a1aa-466f-8269-44b4af12f624">
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+									<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+									<paragraph leftIndent="3" rightIndent="0"/>
+								</textElement>
+								<text><![CDATA[СТОИМОСТЬ]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="30">
+							<textField>
+								<reportElement style="Default" mode="Transparent" x="0" y="0" width="91" height="30" forecolor="#050505" uuid="f2db7304-0fb9-4f77-b24d-e195ee646bac">
+									<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+									<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#050505"/>
+								</box>
+								<textElement>
+									<paragraph leftIndent="5" rightIndent="5"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{sum}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="336" width="540" height="20" uuid="45cc5a54-8970-4b15-bd93-8666a208f5c0">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ТОВАР ИЗ ИНТЕРНЕТ-МАГАЗИНА НЕ ПОДОШЁЛ/ОКАЗАЛСЯ С ДЕФЕКТОМ, ЧТО ДЕЛАТЬ?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="360" width="540" height="21" uuid="a16650fc-ebfa-4215-8e44-a4265192e3dd"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[В течение 90 дней можно вернуть его в розничном магазине спустя 2 дня после покупки.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="387" width="540" height="20" uuid="26e9cbe3-d8a0-44a5-aba4-82a75ce26e66"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[КАК ВЕРНУТЬ ТОВАР В РОЗНИЧНОМ МАГАЗИНЕ?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="502" width="540" height="20" uuid="baee2176-cd15-4142-bf90-63b9b2e26078"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[МОЖНО ПОМЕНЯТЬ ТОВАР НА ТАКОЙ ЖЕ, НО ДРУГОГО ЦВЕТА ИЛИ РАЗМЕРА?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="454" width="540" height="16" uuid="a3e9e7a2-429e-4243-b832-20de8309bfca"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[КОГДА Я ПОЛУЧУ ДЕНЬГИ ЗА ТОВАР?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="526" width="540" height="36" uuid="fd087eab-27c2-4b26-9770-7ff42151ba3d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[К сожалению, нет. Но можно вернуть то, что не подошло, и сделать новый заказ в интернет-магазине. Обратите внимание, цена товара может отличаться от первоначальной.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="412" width="540" height="38" uuid="43acd9c9-d03f-4d04-b9ff-973650c238f4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Нужно прийти в любой фирменный магазин Gloria Jeans и обратиться к сотруднику на кассе. Не забудьте товар, паспорт, чек или его копию, банковскую карту.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="476" width="540" height="20" uuid="ac2586bb-b126-4ab7-8080-27161299eebd"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[В течение 10 рабочих дней.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="568" width="540" height="20" uuid="db93f470-64b4-4585-83e9-2259316b16c6"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ОСТАЛИСЬ ВОПРОСЫ?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="593" width="540" height="38" uuid="2284e4fb-3e69-49e0-96cf-074f6a2dddfc"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Позвоните нам по номеру 8 800 505 82 82 или напишите на help@gloria-jeans.ru. Ваш шопинг-консультант на связи с 8:00 до 22:00 по МСК.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="30" y="10" width="150" height="50" uuid="9667501e-5f74-438f-a2e7-dd2b0f87fef3"/>
+				<imageExpression><![CDATA[net.sf.jasperreports.engine.util.JRImageLoader.getInstance(new SimpleJasperReportsContext()).loadAwtImageFromBytes(Base64.getDecoder().decode("iVBORw0KGgoAAAANSUhEUgAAAYoAAACTCAMAAACnDq7FAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHOUExURf////7+/v39/fz8/Pr6+vv7+/f39/Ly8vb29vHx8fn5+fT09PPz8/X19fj4+Ozs7O/v7+7u7tzc3NTU1N3d3ebm5ufn5+Pj49/f39ra2tjY2Nvb2+Hh4eTk5OXl5eLi4t7e3tnZ2eDg4NfX19XV1ejo6PDw8NPT06KioomJiYqKio+Pj5CQkI6OjpGRkYyMjIeHh5OTk8HBwZKSknFxcXp6eoaGhoGBgXh4eICAgIiIiIODg3d3d35+fnt7e3x8fIWFhYKCgn19fYSEhH9/f3Nzc6urq8vLy3l5eb29vc3NzZubm3Z2dnJycrKysrGxsdLS0nV1dbe3t8/Pz7W1tevr69DQ0HBwcLa2tu3t7ZmZmYuLi6+vr7Ozs8rKynR0dKqqqs7OzszMzLS0tJaWlpeXl+rq6pSUlK6urpqamunp6dbW1ry8vJycnKioqLCwsK2trZiYmKysrKmpqcbGxr+/v7m5ub6+vru7u7q6uqCgoLi4uJ6enm5ubm1tbW9vb5+fn8jIyKOjo6SkpKenp8LCwsDAwNHR0cPDw8nJyaWlpZWVlaampo2NjcfHx8XFxaGhoZ2dncTExGdnZ2xsbGlpaWtra2pqamhoaAAAABE8cOkAAACadFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wDLsIVjAAAACXBIWXMAACHVAAAh1QEEnLSdAAAYeUlEQVR4Xu1dWW4jORKtKwjQaQyfRF+CTqF7+MLztggypZTsqTQG3Rg+W0wySAaDsXBJq7r/LCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz8Pk6n+QE8E/IowqhZ+B1Io/q8VrIJo3qqf2q78DeQGv2JQovAOj390MdlJl2bchUWjmFWI/M2C7TrgtCFtplzsEiVF45AapwTqdU6Zi6PphdGF2JZ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"))]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="81" y="112" width="180" height="34" uuid="3d86b28b-f31b-4868-bd75-bd4279850a01"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{buyerFullName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="112" width="250" height="50" uuid="3340b096-6cdd-4bab-b0a8-f87bbc267a61">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.firstLineIndent" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+					<paragraph firstLineIndent="96" leftIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deliveryAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="64" y="159" width="180" height="16" uuid="da20a06f-9bb3-4c03-9eb1-9cd4d5932c2f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{orderNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="159" width="192" height="16" uuid="14e012ca-d771-4cdd-adf2-a0c00716af13"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{buyerPhoneNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="83" y="188" width="180" height="16" uuid="892bc864-3148-4b7f-8bb3-ab280df998a1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{orderDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="188" width="250" height="38" uuid="32abaf0a-847f-4261-b608-3c3a0a978424">
+					<property name="com.jaspersoft.studio.unit.firstLineIndent" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+					<paragraph firstLineIndent="62"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{buyerEmail}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="211" width="180" height="16" uuid="13efc857-7ff8-42aa-8fbf-41ae8d9c532f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{orderNumber}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="7"/>
+	</columnHeader>
+	<detail>
+		<band height="7"/>
+	</detail>
+	<lastPageFooter>
+		<band/>
+	</lastPageFooter>
+</jasperReport>

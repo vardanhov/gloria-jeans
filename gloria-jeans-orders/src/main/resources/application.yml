@@ -1,0 +1,56 @@
+spring:
+  datasource-onec-database:
+    jdbcUrl: jdbc:sqlserver://${hostname}:1433;databaseName=ARM;encrypt=false
+    username: ----
+    password: ----
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  datasource-internal-database:
+    jdbcUrl: jdbc:sqlserver://${hostname}:1433;databaseName=gj_orders;encrypt=false
+    username: ----
+    password: ----
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+server:
+  port: 8083
+  address: 0.0.0.0
+  jetty:
+    threads:
+      max: 4
+      min: 2
+onec:
+  md:
+    path: "D:/ARM/.md"
+
+directory:
+  printed:
+    file: "D:/Для обмена/Печать/Orders"
+
+idd-generator:
+  url: "http://${hostname}:8081/idd/generator"
+
+marks:
+  server:
+    url: "http://azr-package-db.gloria.aaanet.ru:9010"
+    authorization:
+      url: "https://rnd-netsso.gloria.aaanet.ru/auth"
+      username: "****"
+      password: "****"
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus, health, metrics, info
+
+net:
+  sf:
+    jasperreports:
+      extension:
+        registry:
+          factory:
+            fonts: "net.sf.jasperreports.engine.fonts.SimpleFontExtensionsRegistryFactory"
+        simple:
+          font:
+            families:
+              ireportfamily: "fonts/fontsfamily.xml #locati"

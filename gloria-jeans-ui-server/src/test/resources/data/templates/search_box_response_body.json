@@ -1,0 +1,319 @@
+{
+  "items": [
+    {
+      "id": "1074921d-394b-455c-b2b0-9c9bcf640b11",
+      "elementType": 2,
+      "modifiers": [
+        {
+          "fillMaxSize": true
+        }
+      ],
+      "items": [
+        {
+          "id": "b55b2fab-0dad-4590-8680-e642eaab88f7",
+          "elementType": 2,
+          "modifiers": [
+            {
+              "height": 24
+            }
+          ],
+          "items": [],
+          "direction": 0,
+          "hasScroll": false,
+          "collapse" : false,
+          "collapseButtonColor": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 0
+          },
+          "collapseButtonText": ""
+        },
+        {
+          "id": "9314e0e9-50e9-4255-b186-4de42944658a",
+          "elementType": 2,
+          "modifiers": [
+            {
+              "height": 45
+            },
+            {
+              "width": 328
+            },
+            {
+              "paddingHorizontal": 16
+            }
+          ],
+          "items": [
+            {
+              "id": "ddc13a8b-db05-45c2-b47f-a4dad31e8c13",
+              "elementType": 7,
+              "modifiers": [
+                {
+                  "fillMaxHeight": true
+                },
+                {
+                  "paddingHorizontal": 5
+                },
+                {
+                  "width": 32
+                },
+                {
+                  "height": 32
+                }
+              ],
+              "image": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZbLDcMgEET5FZB0kBRAD+kgKcWpJCklvSDu6cAugI9ZiZUwtnzlMnOAHXZYveMKAUHQYEk6rLWfcr2oDiE8jDETe+fcnfopJeG9f/d57rMnxRgnrTWVX+rXP0/ynCnzfjTPVH/JOd8asJ3vwE/zUkrKyy5zPZqpxGABAAAAAAAAAACA4QC8kCxlifg37zuv1Ib1NF/qpd5tZj7KQBA0XCuIREM64lHobgAAAABJRU5ErkJggg=="
+            },
+            {
+              "id": "0071c9b6-414d-4253-898e-33d0f7a7ded7",
+              "elementType": 2,
+              "modifiers": [
+                {
+                  "paddingHorizontal": 10
+                }
+              ],
+              "items": [
+                {
+                  "id": "ba7af8b6-733b-491b-a037-24c2de464122",
+                  "elementType": 3,
+                  "modifiers": [],
+                  "textAlign": 3,
+                  "fontSize": 20,
+                  "fontStyle": 0,
+                  "fontWeight": 700,
+                  "content": {
+                    "value": "scanBarCodeLabel",
+                    "selfContained": false
+                  }
+                },
+                {
+                  "id": "14dc17f1-3036-430e-9aba-092c7ed1cbb2",
+                  "elementType": 3,
+                  "modifiers": [],
+                  "textAlign": 3,
+                  "fontSize": 14,
+                  "fontStyle": 0,
+                  "fontWeight": 400,
+                  "content": {
+                    "value": "boxNumberLabel",
+                    "selfContained": false
+                  }
+                }
+              ],
+              "direction": 0,
+              "hasScroll": false,
+              "collapse" : false,
+              "collapseButtonColor": {
+                "alpha": 255,
+                "blue": 0,
+                "green": 0,
+                "red": 0
+              },
+              "collapseButtonText": ""
+            }
+          ],
+          "direction": 1,
+          "hasScroll": false,
+          "collapse" : false,
+          "collapseButtonColor": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 0
+          },
+          "collapseButtonText": ""
+        },
+        {
+          "id": "0631cb32-83a4-4965-997b-4d338c8b8b5b",
+          "elementType": 2,
+          "modifiers": [
+            {
+              "height": 33
+            }
+          ],
+          "items": [],
+          "direction": 0,
+          "hasScroll": false,
+          "collapse" : false,
+          "collapseButtonColor": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 0
+          },
+          "collapseButtonText": ""
+        },
+        {
+          "id": "a72447ba-cf94-4117-ab79-89c9ef9f7e88",
+          "elementType": 4,
+          "modifiers": [
+            {
+              "height": 65
+            },
+            {
+              "width": 359
+            },
+            {
+              "paddingHorizontal": 16
+            }
+          ],
+          "value": {
+            "value": "barcodeBox",
+            "selfContained": false
+          },
+          "singleLine": true,
+          "label": {
+            "value": "barcodeBoxPlaceholder",
+            "selfContained": false
+          },
+          "autoFocus": true,
+          "keyboardType": "Text",
+          "clickAction": {
+            "callbackData": {
+              "value": "",
+              "selfContained": false
+            },
+            "actionUri": "##BASE_URL##/screen/warehouse/supply/recalculation/box"
+          }
+        },
+        {
+          "id": "6e79d342-d93c-4121-a808-399250c2b534",
+          "elementType": 0,
+          "modifiers": [
+            {
+              "paddingVertical": 23
+            },
+            {
+              "paddingHorizontal": 16
+            },
+            {
+              "width": 327
+            },
+            {
+              "height": 36
+            }
+          ],
+          "content": {
+            "id": "37b62c24-a06d-4a09-962d-86671fb73ed7",
+            "elementType": 3,
+            "modifiers": [],
+            "textAlign": 3,
+            "fontSize": 14,
+            "fontStyle": 0,
+            "fontWeight": 400,
+            "content": {
+              "value": "buttonSearchText",
+              "selfContained": false
+            }
+          },
+          "clickAction": {
+            "callbackData": {
+              "value": "",
+              "selfContained": false
+            },
+            "actionUri": "##BASE_URL##/screen/warehouse/supply/recalculation/box"
+          }
+        }
+      ],
+      "direction": 0,
+      "hasScroll": true,
+      "collapse" : false,
+      "collapseButtonColor": {
+        "alpha": 255,
+        "blue": 0,
+        "green": 0,
+        "red": 0
+      },
+      "collapseButtonText": ""
+    }
+  ],
+  "scanAction": {
+    "id": "43acb1a8-2af8-4f60-b203-d299657c95ab",
+    "modifiers": [],
+    "actionUri": "##BASE_URL##/screen/warehouse/supply/recalculation/box",
+    "callbackData": {
+      "value": "",
+      "selfContained": false
+    }
+  },
+  "header": {
+    "contents": [
+      {
+        "id": "ed2f7556-34f4-4e8e-8ef6-5f8b789e1777",
+        "elementType": 1,
+        "modifiers": [],
+        "icon": 6,
+        "clickAction": {
+          "callbackData": {
+            "value": "",
+            "selfContained": false
+          },
+          "actionUri": "##BASE_URL##/screen/warehouse"
+        }
+      },
+      {
+        "id": "0dc167db-3fd5-40c6-8b3d-110747659516",
+        "elementType": 3,
+        "modifiers": [],
+        "textAlign": 3,
+        "fontSize": 15,
+        "fontStyle": 0,
+        "fontWeight": 500,
+        "content": {
+          "value": "headerTitle",
+          "selfContained": false
+        },
+        "color": {
+          "red": 255,
+          "green": 255,
+          "blue": 255,
+          "alpha": 255
+        }
+      },
+      {
+        "id": "9a9820fe-b2db-42e2-9459-d1cba43d39ac",
+        "elementType": 1,
+        "modifiers": [],
+        "icon": 3,
+        "dropdownMenu": {
+          "dropdownMenuItems": [
+            {
+              "text": {
+                "value": "buttonSearchDocumentText",
+                "selfContained": false
+              },
+              "clickAction": {
+                "callbackData": {
+                  "value": "",
+                  "selfContained": false
+                },
+                "actionUri": "##BASE_URL##/screen/warehouse/supply/search/document"
+              },
+              "enabled": true
+            }
+          ],
+          "modifiers": []
+        }
+      }
+    ]
+  },
+  "dataContext": {
+    "entryPointUrl": "",
+    "headerTitle": "Поиск коробки",
+    "headerRefreshAction": "##BASE_URL##/screen/warehouse/supply/search/box",
+    "footerText": "",
+    "message": "",
+    "footerButtons": [],
+    "bottomButtons": [],
+    "lastURLs": [],
+    "label": "",
+    "labelUnderLabel": "",
+    "scanBarCodeLabel": "Отсканируйте ШК",
+    "boxNumberLabel": "или введите номер коробки",
+    "barcodeBox": "",
+    "barcodeBoxPlaceholder": "Номер коробки",
+    "buttonSearchText": "ПОИСК",
+    "buttonSearchDocumentText": "Искать документ",
+    "yesButtonText": "",
+    "noButtonText": ""
+  }
+}

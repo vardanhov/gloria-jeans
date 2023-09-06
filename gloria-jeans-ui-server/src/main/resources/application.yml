@@ -1,0 +1,23 @@
+base-server-url: http://${hostname}
+services:
+  receiving: http://${hostname}:8082/receiving
+  orders: http://${hostname}:8083/orders
+  catalog: http://${hostname}:8084/catalog
+
+server:
+  port: 8080
+  address: 0.0.0.0
+  jetty:
+    threads:
+      max: 4
+      min: 2
+
+receiving:
+  image: https://storage-cdn5.gloria-jeans.ru/pictures
+  attribute: _01_300Wx300H.jpg
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus, health, metrics, info

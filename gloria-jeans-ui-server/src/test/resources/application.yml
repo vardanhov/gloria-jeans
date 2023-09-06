@@ -1,0 +1,24 @@
+base-server-url: http://localhost
+services:
+  receiving: http://localhost:8082/receiving
+  orders: http://localhost:8083/orders
+  catalog: http://localhost:8084/catalog
+  export: http://localhost:8085/export
+
+server:
+  port: 8080
+  address: 0.0.0.0
+  jetty:
+    threads:
+      max: 4
+      min: 2
+
+receiving:
+  image: https://storage-cdn5.gloria-jeans.ru/pictures
+  attribute: _01_300Wx300H.jpg
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus, health, metrics, info

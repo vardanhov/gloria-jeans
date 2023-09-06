@@ -1,0 +1,36 @@
+spring:
+  datasource-onec-database:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  datasource-internal-database:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  flyway:
+    enabled: false
+
+server:
+  port: 80
+  address: 0.0.0.0
+
+onec:
+  md:
+    path: src/test/resources/.MD
+
+marks:
+  server:
+    url: http://rnd-stamp-tst.gloria.aaanet.ru:8040
+    authorization:
+      url: https://rnd-netsso-test.gloria.aaanet.ru/auth
+      username: "****"
+      password: "****"
+
+idd-generator:
+  url: http://localhost:8081/idd/generator
+
+directory:
+  printed:
+    file:
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus, health, metrics, info

@@ -1,0 +1,503 @@
+{
+  "items": [
+    {
+      "id": "e2d51767-7667-4878-8f4f-78bfb96dd256",
+      "elementType": 2,
+      "modifiers": [
+        {
+          "fillMaxSize": true
+        }
+      ],
+      "items": [
+        {
+          "id": "9639fde1-a9ac-4be1-9573-efe6bf63b228",
+          "elementType": 2,
+          "modifiers": [
+            {
+              "paddingVertical": 12
+            }
+          ],
+          "items": [],
+          "direction": 0,
+          "hasScroll": false
+        },
+        {
+          "id": "db28fa52-9189-42b1-a1e4-c7a53739dbad",
+          "elementType": 2,
+          "modifiers": [
+            {
+              "paddingHorizontal": 16
+            },
+            {
+              "shadow": {
+                "elevation": 2,
+                "shape": {
+                  "clipShape": "RoundedCornerShape",
+                  "percent": 4
+                }
+              }
+            }
+          ],
+          "items": [
+            {
+              "id": "7d23873d-4385-4148-9271-4b4e584f35b8",
+              "elementType": 2,
+              "modifiers": [
+                {
+                  "paddingVertical": 6
+                }
+              ],
+              "items": [],
+              "direction": 0,
+              "hasScroll": false
+            },
+            {
+              "id": "dce88f35-735f-488f-9a58-6cfa483cbe78",
+              "elementType": 2,
+              "modifiers": [
+                {
+                  "height": 25
+                },
+                {
+                  "width": 360
+                },
+                {
+                  "background": {
+                    "color": {
+                      "red": 255,
+                      "green": 255,
+                      "blue": 255,
+                      "alpha": 0
+                    }
+                  }
+                }
+              ],
+              "items": [
+                {
+                  "id": "00b46d7b-d871-48f9-be63-b6037c9e6bb9",
+                  "elementType": 3,
+                  "modifiers": [
+                    {
+                      "width": 224
+                    },
+                    {
+                      "paddingHorizontal": 16
+                    }
+                  ],
+                  "textAlign": 1,
+                  "fontSize": 12,
+                  "fontStyle": 0,
+                  "fontWeight": 400,
+                  "content": {
+                    "value": "type",
+                    "selfContained": false
+                  },
+                  "color": {
+                    "red": 0,
+                    "green": 0,
+                    "blue": 0,
+                    "alpha": 100
+                  }
+                },
+                {
+                  "id": "c5fa47e9-c2f4-4314-8a07-39b68f9f1d2f",
+                  "elementType": 3,
+                  "modifiers": [
+                    {
+                      "paddingHorizontal": 16
+                    }
+                  ],
+                  "textAlign": 3,
+                  "fontSize": 14,
+                  "fontStyle": 0,
+                  "fontWeight": 400,
+                  "content": {
+                    "value": "docDate",
+                    "selfContained": false
+                  },
+                  "color": {
+                    "red": 0,
+                    "green": 0,
+                    "blue": 0,
+                    "alpha": 100
+                  }
+                }
+              ],
+              "direction": 1,
+              "hasScroll": false
+            },
+            {
+              "id": "08590a2d-ce7d-4f11-9d4c-ec959d45056f",
+              "elementType": 3,
+              "modifiers": [
+                {
+                  "paddingHorizontal": 16
+                }
+              ],
+              "textAlign": 3,
+              "fontSize": 20,
+              "fontStyle": 0,
+              "fontWeight": 500,
+              "content": {
+                "value": "documentNumber",
+                "selfContained": false
+              }
+            },
+            {
+              "id": "a1d9b7a6-17f9-48fb-8125-d63e422c4935",
+              "elementType": 2,
+              "modifiers": [
+                {
+                  "height": 40
+                },
+                {
+                  "width": 360
+                },
+                {
+                  "background": {
+                    "color": {
+                      "red": 255,
+                      "green": 255,
+                      "blue": 255,
+                      "alpha": 0
+                    }
+                  }
+                }
+              ],
+              "items": [
+                {
+                  "id": "a8e35bf8-e53a-4b22-826b-d583aacb7e90",
+                  "elementType": 3,
+                  "modifiers": [
+                    {
+                      "paddingHorizontal": 16
+                    },
+                    {
+                      "paddingVertical": 8
+                    }
+                  ],
+                  "textAlign": 3,
+                  "fontSize": 12,
+                  "fontStyle": 0,
+                  "fontWeight": 400,
+                  "content": {
+                    "value": "senderText",
+                    "selfContained": false
+                  },
+                  "color": {
+                    "red": 0,
+                    "green": 0,
+                    "blue": 0,
+                    "alpha": 100
+                  }
+                },
+                {
+                  "id": "c80c9f4f-f6b4-41d9-b2db-97fd4bfb9b9c",
+                  "elementType": 2,
+                  "modifiers": [
+                    {
+                      "paddingHorizontal": 6
+                    }
+                  ],
+                  "items": [],
+                  "direction": 0,
+                  "hasScroll": false
+                },
+                {
+                  "id": "18194ed5-55de-4b91-a414-51d356fbd076",
+                  "elementType": 3,
+                  "modifiers": [
+                    {
+                      "paddingVertical": 8
+                    }
+                  ],
+                  "textAlign": 3,
+                  "fontSize": 12,
+                  "fontStyle": 0,
+                  "fontWeight": 500,
+                  "content": {
+                    "value": "sender",
+                    "selfContained": false
+                  }
+                }
+              ],
+              "direction": 1,
+              "hasScroll": false
+            }
+          ],
+          "direction": 0,
+          "hasScroll": false
+        },
+        {
+          "id": "ab9d4a66-e630-445c-ac8c-6f7b0e700e5e",
+          "elementType": 2,
+          "modifiers": [
+            {
+              "height": 10
+            }
+          ],
+          "items": [],
+          "direction": 1,
+          "hasScroll": false
+        },
+        {
+          "id": "27898c4e-3ab7-4666-b168-9760c90dbcf4",
+          "elementType": 2,
+          "modifiers": [
+            {
+              "paddingVertical": 10
+            }
+          ],
+          "items": [],
+          "direction": 0,
+          "hasScroll": false
+        },
+        {
+          "id": "88b9bad5-f55b-4177-b61a-d6dc1787f237",
+          "elementType": 10,
+          "modifiers": [
+            {
+              "width": 360
+            },
+            {
+              "height": 75
+            },
+            {
+              "paddingVertical": 8
+            },
+            {
+              "paddingHorizontal": 16
+            },
+            {
+              "background": {
+                "color": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0,
+                  "alpha": 1
+                }
+              }
+            },
+            {
+              "height": 75
+            }
+          ],
+          "textField": {
+            "id": "1ded54e5-dbb9-4c10-918b-97ec102785e7",
+            "elementType": 4,
+            "modifiers": [],
+            "value": {
+              "value": "receivingPerson",
+              "selfContained": false
+            },
+            "placeholder": {
+              "value": "receivingPerson",
+              "selfContained": false
+            },
+            "label": {
+              "value": "acceptedLabel",
+              "selfContained": false
+            }
+          },
+          "clickAction": {
+            "callbackData": {
+              "value": "",
+              "selfContained": false
+            },
+            "actionUri": "##BASE_URL##/screen/warehouse/supply/employees/list?args=receivingPerson"
+          }
+        },
+        {
+          "id": "89f1db97-42bf-4031-877a-7b842bb32e73",
+          "elementType": 10,
+          "modifiers": [
+            {
+              "width": 360
+            },
+            {
+              "paddingHorizontal": 16
+            },
+            {
+              "background": {
+                "color": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0,
+                  "alpha": 1
+                }
+              }
+            }
+          ],
+          "textField": {
+            "id": "1044fdfd-d6e1-42de-b8b4-b7d6de8096b3",
+            "elementType": 4,
+            "modifiers": [],
+            "value": {
+              "value": "confirmingPerson",
+              "selfContained": false
+            },
+            "placeholder": {
+              "value": "confirmingPerson",
+              "selfContained": false
+            },
+            "label": {
+              "value": "confirmedLabel",
+              "selfContained": false
+            }
+          },
+          "clickAction": {
+            "callbackData": {
+              "value": "",
+              "selfContained": false
+            },
+            "actionUri": "##BASE_URL##/screen/warehouse/supply/employees/list?args=confirmingPerson"
+          }
+        },
+        {
+          "id": "4958cb47-c43c-47a5-bf2b-2d409e6ce18c",
+          "elementType": 2,
+          "modifiers": [
+            {
+              "paddingVertical": 4
+            }
+          ],
+          "items": [],
+          "direction": 0,
+          "hasScroll": false
+        },
+        {
+          "id": "33248794-b607-48a7-b0e6-7d9826b5fead",
+          "elementType": 0,
+          "modifiers": [
+            {
+              "paddingHorizontal": 16
+            },
+            {
+              "width": 360
+            }
+          ],
+          "content": {
+            "id": "b129fa56-1167-4292-943d-4bbb2645382b",
+            "elementType": 3,
+            "modifiers": [],
+            "textAlign": 3,
+            "fontSize": 12,
+            "fontStyle": 0,
+            "fontWeight": 400,
+            "content": {
+              "value": "further",
+              "selfContained": false
+            }
+          },
+          "clickAction": {
+            "callbackData": {
+              "value": "",
+              "selfContained": false
+            },
+            "actionUri": "##BASE_URL##/screen/warehouse/supply/confirm/discrepancy/popup"
+          }
+        }
+      ],
+      "direction": 0,
+      "hasScroll": true
+    }
+  ],
+  "header": {
+    "contents": [
+      {
+        "id": "a0806ae5-be62-45e4-8a89-d77eb74c41f3",
+        "elementType": 1,
+        "modifiers": [],
+        "icon": 6,
+        "clickAction": {
+          "callbackData": {
+            "value": "",
+            "selfContained": false
+          },
+          "actionUri": "##BASE_URL##/screen/warehouse/supply/view/document"
+        }
+      },
+      {
+        "id": "e3a07c3a-0d5d-4fb0-abd3-ec67efebe0be",
+        "elementType": 3,
+        "modifiers": [],
+        "textAlign": 3,
+        "fontSize": 15,
+        "fontStyle": 0,
+        "fontWeight": 500,
+        "content": {
+          "value": "headerTitle",
+          "selfContained": false
+        },
+        "color": {
+          "red": 255,
+          "green": 255,
+          "blue": 255,
+          "alpha": 255
+        }
+      }
+    ]
+  },
+  "dataContext": {
+    "entryPointUrl": "",
+    "headerTitle": "Расхождения",
+    "headerRefreshAction": "##BASE_URL##/screen/warehouse/supply/confirm/discrepancy",
+    "footerText": "",
+    "message": "",
+    "footerButtons": [],
+    "bottomButtons": [],
+    "beepType": 0,
+    "label": "Отсканируйте ШК",
+    "labelUnderLabel": "Или введите номер документа",
+    "scanBarCodeLabel": "Отсканируйте ШК",
+    "boxNumberLabel": "или введите номер коробки",
+    "barcodeBox": "",
+    "barcodeBoxPlaceholder": "Номер коробки",
+    "buttonSearchText": "ПОИСК",
+    "buttonSearchDocumentText": "Искать документ",
+    "yesButtonText": "",
+    "noButtonText": "",
+    "documentBarcode": "00002780070142505",
+    "documentNumber": "Л322ПР000000328",
+    "documentType": "",
+    "documentStatus": "",
+    "dateFrom": "",
+    "dateTo": "",
+    "labelDateFrom": "Начальная дата",
+    "labelDateTo": "Конечная дата",
+    "sender": "Новошахтинск №1                                                 ",
+    "or": "Или",
+    "resultCountText": "Найдено",
+    "selectedDocumentIdd": "",
+    "quantityBox": "0 / 4",
+    "quantity": "0 / 68",
+    "type": "Первоначальное распределение",
+    "status": "В работе",
+    "docDate": "05.01.2022",
+    "acceptBy": "",
+    "from": "от",
+    "senderText": "Отправитель:",
+    "acceptedBoxText": "Принято коробок",
+    "unitText": "Принято штук",
+    "supplyButtonText": "Провести поставку",
+    "confidentialAcceptanceButtonText": "Доверительная приемка всей поставки",
+    "removeFromHoldingButtonText": "Снять с проведения",
+    "printingPackingListButtonText": "Печать упаковочного листа",
+    "printingTrade13ButtonText": "Напечатать ТОРГ-13 ФАКТ",
+    "printingTrade13ButtonTextPlan": "Напечатать ТОРГ-13 ПЛАН",
+    "comment": "",
+    "further": "Далее",
+    "acceptedLabel": "Принял",
+    "confirmedLabel": "Подтвердил",
+    "commentLabel": "Комментарий",
+    "receivingPerson": "ФИО",
+    "confirmingPerson": "ФИО",
+    "selectedTextField": "",
+    "id": "",
+    "idd": "",
+    "receivingPersonId": "",
+    "confirmingPersonId": "",
+    "fullName": "",
+    "position": ""
+  }
+}

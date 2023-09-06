@@ -1,0 +1,375 @@
+{
+  "items": [
+    {
+      "id": "98f89776-0e95-4f82-834b-6993bc4a046d",
+      "elementType": 2,
+      "modifiers": [
+        {
+          "fillMaxSize": true
+        },
+        {
+          "background": {
+            "color": {
+              "red": 139,
+              "green": 139,
+              "blue": 139,
+              "alpha": 255
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "254d80e2-dfde-4deb-afd7-80634db417d7",
+          "elementType": 2,
+          "modifiers": [
+            {
+              "paddingHorizontal": 40
+            },
+            {
+              "paddingVertical": 93
+            },
+            {
+              "shadow": {
+                "elevation": 14,
+                "shape": {
+                  "clipShape": "RoundedCornerShape",
+                  "percent": 2
+                }
+              }
+            },
+            {
+              "background": {
+                "color": {
+                  "red": 255,
+                  "green": 255,
+                  "blue": 255,
+                  "alpha": 255
+                }
+              }
+            },
+            {
+              "height": 267
+            }
+          ],
+          "items": [
+            {
+              "id": "c49aa25e-65ad-44aa-90fc-f8e8e4e1bc08",
+              "elementType": 6,
+              "modifiers": [
+                {
+                  "paddingVertical": 8
+                }
+              ]
+            },
+            {
+              "id": "2dc2f9b5-9edb-404e-9094-e16b4733d768",
+              "elementType": 7,
+              "modifiers": [
+                {
+                  "paddingHorizontal": 125
+                },
+                {
+                  "width": 27
+                },
+                {
+                  "height": 27
+                }
+              ],
+              "image": "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"
+            },
+            {
+              "id": "41029d18-921d-4737-aad1-f4ca153c0c60",
+              "elementType": 6,
+              "modifiers": [
+                {
+                  "paddingVertical": 3
+                }
+              ]
+            },
+            {
+              "id": "89f8c548-4a78-49f0-922c-e79d009597cf",
+              "elementType": 3,
+              "modifiers": [
+                {
+                  "paddingHorizontal": 55
+                }
+              ],
+              "textAlign": 3,
+              "fontSize": 16,
+              "fontStyle": 0,
+              "fontWeight": 400,
+              "content": {
+                "value": "changeQuantityLabel",
+                "selfContained": false
+              }
+            },
+            {
+              "id": "a8b9940d-cca3-4c97-814f-0566f9ba4c63",
+              "elementType": 10,
+              "modifiers": [
+                {
+                  "width": 360
+                },
+                {
+                  "height": 70
+                },
+                {
+                  "paddingVertical": 4
+                },
+                {
+                  "paddingHorizontal": 16
+                },
+                {
+                  "background": {
+                    "color": {
+                      "red": 0,
+                      "green": 0,
+                      "blue": 0,
+                      "alpha": 1
+                    }
+                  }
+                }
+              ],
+              "textField": {
+                "id": "7c5d4b85-4531-4c7a-97f5-7429a0686af1",
+                "elementType": 4,
+                "modifiers": [],
+                "value": {
+                  "value": "selectedProductCountPlan",
+                  "selfContained": false
+                },
+                "placeholder": {
+                  "value": "selectedProductCountPlan",
+                  "selfContained": false
+                },
+                "label": {
+                  "value": "productPlanLabel",
+                  "selfContained": false
+                }
+              }
+            },
+            {
+              "id": "82f40bbf-f181-4415-8d32-4c50f06d945e",
+              "elementType": 4,
+              "modifiers": [
+                {
+                  "paddingHorizontal": 17
+                },
+                {
+                  "height": 60
+                }
+              ],
+              "value": {
+                "value": "selectedProductCountFact",
+                "selfContained": false
+              },
+              "label": {
+                "value": "productFactLabel",
+                "selfContained": false
+              }
+            },
+            {
+              "id": "d00b739a-e026-41f9-964b-920aa25c7f8b",
+              "elementType": 6,
+              "modifiers": [
+                {
+                  "paddingVertical": 4
+                }
+              ]
+            },
+            {
+              "id": "8cf5b5a6-cf01-4c31-8710-d4536b9e975f",
+              "elementType": 2,
+              "modifiers": [
+                {
+                  "paddingVertical": 20
+                }
+              ],
+              "items": [
+                {
+                  "id": "d8aef906-7a73-4549-9972-5b8ac37ed41d",
+                  "elementType": 6,
+                  "modifiers": [
+                    {
+                      "paddingHorizontal": 37
+                    }
+                  ]
+                },
+                {
+                  "id": "2c1b03a9-68eb-4d87-9422-82e0f83a7a11",
+                  "elementType": 3,
+                  "modifiers": [
+                    {
+                      "width": 115
+                    }
+                  ],
+                  "textAlign": 3,
+                  "fontSize": 14,
+                  "fontStyle": 0,
+                  "fontWeight": 500,
+                  "content": {
+                    "value": "saveButtonText",
+                    "selfContained": false
+                  },
+                  "color": {
+                    "red": 255,
+                    "green": 0,
+                    "blue": 0,
+                    "alpha": 255
+                  },
+                  "clickAction": {
+                    "callbackData": {
+                      "value": "",
+                      "selfContained": false
+                    },
+                    "actionUri": "http://10.61.64.61/screen/warehouse/supply/change/quantity/update"
+                  }
+                },
+                {
+                  "id": "94c229fa-59a6-49fd-bcdf-cb0e2732b157",
+                  "elementType": 3,
+                  "modifiers": [
+                    {
+                      "width": 80
+                    }
+                  ],
+                  "textAlign": 3,
+                  "fontSize": 14,
+                  "fontStyle": 0,
+                  "fontWeight": 500,
+                  "content": {
+                    "value": "closeButtonText",
+                    "selfContained": false
+                  },
+                  "color": {
+                    "red": 0,
+                    "green": 0,
+                    "blue": 0,
+                    "alpha": 100
+                  },
+                  "clickAction": {
+                    "callbackData": {
+                      "value": "",
+                      "selfContained": false
+                    },
+                    "actionUri": "##BASE_URL##/screen/warehouse/supply/recalculation/box"
+                  }
+                }
+              ],
+              "direction": 1,
+              "hasScroll": false
+            }
+          ],
+          "direction": 0,
+          "hasScroll": false
+        }
+      ],
+      "direction": 0,
+      "hasScroll": false
+    }
+  ],
+  "header": {
+    "contents": [
+      {
+        "id": "1a0d9ed2-b837-45f5-9336-2486e5179ed4",
+        "elementType": 1,
+        "modifiers": [],
+        "icon": 6,
+        "clickAction": {
+          "callbackData": {
+            "value": "",
+            "selfContained": false
+          },
+          "actionUri": "##BASE_URL##/screen/warehouse/supply/recalculation/box"
+        }
+      },
+      {
+        "id": "83612412-038f-435d-93ec-0cfd5075d230",
+        "elementType": 3,
+        "modifiers": [],
+        "textAlign": 3,
+        "fontSize": 15,
+        "fontStyle": 0,
+        "fontWeight": 500,
+        "content": {
+          "value": "headerTitle",
+          "selfContained": false
+        },
+        "color": {
+          "red": 255,
+          "green": 255,
+          "blue": 255,
+          "alpha": 255
+        }
+      }
+    ]
+  },
+  "dataContext": {
+    "entryPointUrl": "",
+    "headerTitle": "Изменить количество",
+    "headerRefreshAction": "##BASE_URL##/screen/warehouse/supply/change/quantity",
+    "footerText": "",
+    "message": "",
+    "footerButtons": [],
+    "bottomButtons": [],
+    "beepType": 0,
+    "scanType": "",
+    "iddDocument": "00002780070720607",
+    "iddAcceptanceDocument": "00002780070720607",
+    "idLot": "",
+    "barcodeBox": "0010802485319",
+    "handleSearch": "",
+    "barcodeLot": "",
+    "scannedMark": "",
+    "createdAt": "",
+    "status": "NOT_HELD",
+    "count": "2/0",
+    "type": "Первоначальное распределение",
+    "documentNumber": "Л322ПР000014543",
+    "quantity": "2",
+    "quantityFact": "0",
+    "quantityDiff": "2",
+    "docDate": "02.02.2022",
+    "from": "от",
+    "label": "Отсканируйте товар / лот или введите штрихкод / артикул вручную",
+    "boxLabel": "",
+    "acceptedPiecesLabel": "",
+    "quantityLabel": "",
+    "quantityFactLabel": "Факт",
+    "quantityDiffLabel": "Расх.",
+    "showTextField": true,
+    "buttonFinish": true,
+    "manualInputBarcodeButtonText": "",
+    "changeQuantityButtonText": "Изменить количество",
+    "clearPositionFactButtonText": "Очистить позицию",
+    "clearFactAllPositionButtonText": "Очистить факт всех позиций",
+    "confidentialAcceptanceButtonText": "Доверительная приемка",
+    "deletePositionButtonText": "Удалить позицию",
+    "removePositionButtonText": "Удалить позицию",
+    "viewPositionImageButtonText": "Просмотр изображения позиции",
+    "viewDiscrepanciesButtonText": "Просмотр расхождений",
+    "selectedProductId": "",
+    "addMarkButton": "Добавить марку",
+    "handleEnterCodeText": "Ручной ввод ШК",
+    "codeNumberText": "Номер штрихкода",
+    "buttonSearchText": "ПОИСК",
+    "printingPackagingButtonText": "Печать упаковочного листа",
+    "textLineFirst": "",
+    "textLineSecond": "",
+    "textButton": "",
+    "selectedDocumentIdd": "00002780070720607",
+    "lotName": "",
+    "finish": "",
+    "barcodeProduct": "",
+    "changeQuantityLabel": "Измените количество",
+    "productPlanLabel": "План",
+    "productFactLabel": "Факт",
+    "selectedProductCountPlan": "",
+    "selectedProductCountFact": "",
+    "saveButtonText": "СОХРАНИТЬ",
+    "closeButtonText": "ЗАКРЫТЬ",
+    "productNameLabel": "Товар",
+    "selectedProductName": ""
+  }
+}

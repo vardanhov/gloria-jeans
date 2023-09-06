@@ -1,0 +1,7 @@
+DELETE Main.dbo.[_1SJOURN];
+DELETE Main.dbo.DH9170;
+DELETE Main.dbo.DT9170;
+DELETE Main.dbo.SC55;
+DELETE Main.dbo.DH3046;
+DELETE Main.dbo.DT3046;
+DELETE Main.dbo.SC4014;

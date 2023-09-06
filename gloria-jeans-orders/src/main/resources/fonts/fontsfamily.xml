@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+    <fontFamily name="Arial">
+        <!-- Normal Arial Font -->
+        <normal><![CDATA[fonts/arial.ttf]]></normal> <!-- location of the nornal font on resource folder -->
+        <!-- Bold Arial Font -->
+        <bold><![CDATA[fonts/arial_bold.ttf]]></bold>
+        <!-- Is font is embedded in PDF -->
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+</fontFamilies>
